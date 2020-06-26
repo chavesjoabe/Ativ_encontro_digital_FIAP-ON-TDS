@@ -48,7 +48,7 @@ body {
 
 .description p {
     font-weight: 300;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .side-img {
@@ -95,6 +95,7 @@ body {
     text-align: center;
     color: #1f1f1f;
     position: relative;
+    transition: 200ms;
 }
 
 .card p {
@@ -104,10 +105,20 @@ body {
     right: 0;
     left: 0;
     font-size: 18px;
+    opacity: 0;
+    transition: 300ms;
 }
 
 .card img {
-    margin-top: 120px;
+    margin-top: 110px;
+}
+
+.card:hover {
+    height: 420px;
+}
+
+.card:hover .content p {
+    opacity: 1;
 }
 
 @media (max-width: 800px) {
